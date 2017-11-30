@@ -10,4 +10,5 @@ COPY test-requirements.txt /src/test-requirements.txt
 RUN pip install -r test-requirements.txt
 
 COPY . /src
-RUN pip install .
+
+CMD ["python", "/src/test.py"]
